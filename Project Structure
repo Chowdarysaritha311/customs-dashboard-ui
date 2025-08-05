@@ -1,0 +1,10 @@
+/project
+  /css
+    style.css
+  /js
+    script.js
+  /images
+    (any images used)
+  index.html (login page)
+  dashboard.html
+  README.md
