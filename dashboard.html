@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomsPro - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-ship"></i>
+                <h1>CustomsPro</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Shipment Filings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">JD</div>
+                    <div class="user-info">
+                        <span class="username">John Doe</span>
+                        <span class="user-role">Customs Broker</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="header-right">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="messages">
+                        <i class="fas fa-envelope"></i>
+                        <span class="badge">5</span>
+                    </div>
+                    <div class="user-menu">
+                        <div class="avatar">JD</div>
+                        <span>John Doe</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Summary Cards -->
+                <div class="summary-cards">
+                    <div class="card">
+                        <div class="card-icon pending">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>12</h3>
+                            <p>Filings Pending</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon approval">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>8</h3>
+                            <p>Awaiting Approval</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon completed">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>24</h3>
+                            <p>Completed Today</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon alerts">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>3</h3>
+                            <p>Urgent Alerts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Filings -->
+                <div class="recent-filings">
+                    <div class="section-header">
+                        <h3>Recent Filings</h3>
+                        <button class="btn-primary" id="newFilingBtn">
+                            <i class="fas fa-plus"></i> New Filing
+                        </button>
+                    </div>
+                    <div class="filings-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Reference #</th>
+                                    <th>Customer</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                    <th>Arrival Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CF-2023-0567</td>
+                                    <td>Global Imports Inc.</td>
+                                    <td>Import</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td>2023-11-15</td>
+                                    <td>
+                                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CF-2023-0566</td>
+                                    <td>Ocean Exports LLC</td>
+                                    <td>Export</td>
+                                    <td><span class="status approved">Approved</span></td>
+                                    <td>2023-11-14</td>
+                                    <td>
+                                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CF-2023-0565</td>
+                                    <td>Continental Traders</td>
+                                    <td>Import</td>
+                                    <td><span class="status rejected">Rejected</span></td>
+                                    <td>2023-11-13</td>
+                                    <td>
+                                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CF-2023-0564</td>
+                                    <td>Global Imports Inc.</td>
+                                    <td>Import</td>
+                                    <td><span class="status in-review">In Review</span></td>
+                                    <td>2023-11-12</td>
+                                    <td>
+                                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CF-2023-0563</td>
+                                    <td>Maritime Shipping Co.</td>
+                                    <td>Export</td>
+                                    <td><span class="status completed">Completed</span></td>
+                                    <td>2023-11-10</td>
+                                    <td>
+                                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- New Filing Modal -->
+    <div class="modal" id="newFilingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>New Customs Filing</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="newFilingForm">
+                    <div class="form-group">
+                        <label for="filingType">Filing Type</label>
+                        <select id="filingType" required>
+                            <option value="">Select type</option>
+                            <option value="import">Import</option>
+                            <option value="export">Export</option>
+                            <option value="transit">Transit</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer">Customer</label>
+                        <select id="customer" required>
+                            <option value="">Select customer</option>
+                            <option value="1">Global Imports Inc.</option>
+                            <option value="2">Ocean Exports LLC</option>
+                            <option value="3">Continental Traders</option>
+                            <option value="4">Maritime Shipping Co.</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="arrivalDate">Estimated Arrival Date</label>
+                        <input type="date" id="arrivalDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="3" placeholder="Brief description of goods"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary close-modal">Cancel</button>
+                        <button type="submit" class="btn-primary">Create Filing</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
